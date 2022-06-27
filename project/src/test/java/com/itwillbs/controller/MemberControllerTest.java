@@ -26,14 +26,14 @@ public class MemberControllerTest {
 		this.mockMvc = MockMvcBuilders.webAppContextSetup(wac).build();
 	}
 	
-	// ¿©±â¼­ ºÎÅÍ ´ÙÀ½°ú °°Àº ÇüÅÂ·Î Å×½ºÆ® ÁøÇàÇÏ¸é µÊ.
+	//	ì—¬ê¸°ì„œë¶€í„° ë‹¤ìŒê³¼ ê°™ì€ í˜•íƒœë¡œ í…ŒìŠ¤íŠ¸ ì§„í–‰í•˜ë©´ ë¨
 	// 	@Test
-	//	public void ÄÁÆ®·Ñ·¯_Å×½ºÆ®() throws Exception{
-	//		log.info("ÄÁÆ®·Ñ·¯ Å×½ºÆ® ½ÃÀÛ");
+	//	public void ì»¨íŠ¸ë¡¤ëŸ¬_í…ŒìŠ¤íŠ¸() throws Exception{
+	//		log.info("ì»¨íŠ¸ë¡¤ëŸ¬ í…ŒìŠ¤íŠ¸ ì‹œì‘");
 	//		
-	//		// ÄÁÆ®·Ñ·¯¿¡¼­ /doA ÁÖ¼Ò È£Ãâ
+	//		// ì»¨íŠ¸ë¡¤ëŸ¬ì—ì„œ /doA ì£¼ì†Œ í˜¸ì¶œ
 	//		mockMvc.perform(MockMvcRequestBuilders.get("/doD"));
-	//		// mockMvc.perform(MockMvcRequestBuilders.post("/doD")); postµµ °¡´É
+	//		// mockMvc.perform(MockMvcRequestBuilders.post("/doD")); postë„ ê°€ëŠ¥
 	//
 	//	}
 

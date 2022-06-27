@@ -16,11 +16,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/spring/root-context.xml"})
 public class MybatisConnectTest {
 	
-	// DataSource °´Ã¼
+	// DataSource ê°ì²´
 	@Inject
 	private DataSource dataSource;
 	
-	// SqlSessionFactory °´Ã¼
+	// SqlSessionFactory ê°ì²´
 	@Inject
 	private SqlSessionFactory sqlSessionFactory;
 	
@@ -28,15 +28,15 @@ public class MybatisConnectTest {
 	private static final Logger log = LoggerFactory.getLogger(MybatisConnectTest.class);
 	
 	@Test 
-	public void ¸¶ÀÌ¹ÙÆ¼½º_¿¬°á_Å×½ºÆ®() {
+	public void ë§ˆì´ë°”í‹°ìŠ¤_ì—°ê²°_í…ŒìŠ¤íŠ¸() {
 		log.info("@@@@@@@@@@@@@@@sqlSessionFactory : " + sqlSessionFactory);
 		log.info("@@@@@@@@@@@@@@@dataSource : " + dataSource);
 	}
 	
 	@Test
-	public void ¸¶ÀÌ¹ÙÆ¼½º_¼¼¼Ç_Ã¼Å©() {
+	public void ë§ˆì´ë°”í‹°ìŠ¤_ì„¸ì…˜_ì²´í¬() {
 		
-		// SqlSession : sql Äõ¸®¸¦ »ç¿ëÇÒ ¼ö ÀÖ´Â °´Ã¼
+		// SqlSession : sql ì¿¼ë¦¬ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìˆëŠ” ê°ì²´
 		SqlSession session = sqlSessionFactory.openSession();
 
 		log.info("@@@@@@@@@@@@@@@session :" + session);
